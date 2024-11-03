@@ -10,8 +10,8 @@
     <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=Expo&color=000020" alt="Expo" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=TypeScript&color=3178C6" alt="three.js" />
     <img src="https://img.shields.io/badge/-Android-black?style=for-the-badge&logoColor=white&logo=Android&color=34A853" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Hygraph-black?style=for-the-badge&logoColor=white&logo=Hygraph&color=34A853" alt="Hygraph" />
-    <img src="https://img.shields.io/badge/-Clerk-blue?style=for-the-badge&logoColor=white&logo=Clerk&color=34A853" alt="Hygraph" />
+    <img src="https://img.shields.io/badge/-Hygraph-black?style=for-the-badge&logoColor=white&logo=Hygraph&color=000020" alt="Hygraph" />
+    <img src="https://img.shields.io/badge/-Clerk-blue?style=for-the-badge&logoColor=white&logo=Clerk&color=3178C6" alt="Hygraph" />
   </div>
 
   <h3 align="center">Day 3 of <b fontweight="bold">30Days-30Apps Challenge</b></h3>
@@ -27,7 +27,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-
+It is a convenient and easy-to-use food delivery application that connects customers with their favorite local restaurants and food establishments. With a wide variety of cuisines to choose from, users can browse menus, place orders, and track their food delivery in real-time. 
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
