@@ -10,9 +10,11 @@
     <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=Expo&color=000020" alt="Expo" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=TypeScript&color=3178C6" alt="three.js" />
     <img src="https://img.shields.io/badge/-Android-black?style=for-the-badge&logoColor=white&logo=Android&color=34A853" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-Hygraph-black?style=for-the-badge&logoColor=white&logo=Hygraph&color=34A853" alt="Hygraph" />
+    <img src="https://img.shields.io/badge/-Clerk-blue?style=for-the-badge&logoColor=white&logo=Clerk&color=34A853" alt="Hygraph" />
   </div>
 
-  <h3 align="center">Day 1 of <b fontweight="bold">30Days-30Apps Challenge</b></h3>
+  <h3 align="center">Day 3 of <b fontweight="bold">30Days-30Apps Challenge</b></h3>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -25,7 +27,6 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with React Native, GreenLeaf is your personal plant companion, designed to make plant care easy and enjoyable. Whether you’re a seasoned plant parent or just starting your green journey, we’re here to help you thrive.
 
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
@@ -33,13 +34,17 @@ Built with React Native, GreenLeaf is your personal plant companion, designed to
 - React Native
 - TypeScript
 - Expo
-- Android Studio
+- VS Code
+- Hygraph
+- Clerk Authentification
 
 ## <a name="features">🔋 Features</a>
 
 👉 **Get Started**:  an essential component during onboarding and user engagement <br />
 👉 **React Navigation**: used for managing navigation in React Native applications<br />
 👉 **Screens**:  play a crucial role in shaping the user experience. <br />
+👉 **Authentification**:  We have used Clerk Authentification SaaS to provide Authentification functions to our application <br />
+👉 **Database**:  We have used Hygraph to manage Application Database System <br />
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -56,8 +61,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/DarkShadowCoder/OnboardingScreen_app.git
-cd OnboardingScreen_app
+git clone https://github.com/DarkShadowCoder/Food_Delivery_App.git
+cd Food_Delivery_App
 ```
 
 **Installation**
