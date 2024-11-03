@@ -2,8 +2,9 @@ import { FlatList, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View }
 import React from 'react'
 import HeaderTab from '@/components/HeaderTab'
 import { Colors } from '@/constants/Colors'
-import { category } from '@/data/data'
+import { category, food } from '@/data/data'
 import Category from '@/components/Category'
+import Product from '@/components/Product'
 
 const HomeScreen = () => {
   return (
@@ -62,6 +63,7 @@ const HomeScreen = () => {
         paddingTop: 10
 
       }}>Categories</Text>
+      <View>
         <FlatList
         data={category}
         renderItem={({item}) =>(
@@ -70,10 +72,49 @@ const HomeScreen = () => {
         style={styles.scrollView}
         horizontal={true}
         scrollEnabled={false}
-        
+        centerContent={true}
+        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         />
-
-        <Text>Top picks</Text>
+      </View>
+        <Text style={{
+          fontSize: 24,
+          fontFamily: "outfit-medium",
+          paddingTop: 5
+        }}>Top picks</Text>
+      <View>
+        <FlatList style={styles.productContainer}
+        data={food.slice(0,2)}
+        horizontal={true}
+        renderItem={({item}) =>(
+          <View style={{margin: 5}}>
+            <Product image={item.img} productName={item.name} productPrice={item.price} note={item.note} />
+          </View>
+        )}
+        scrollEnabled={true}
+        
+        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+      />
+      </View>
+      <View style={{
+        width: '100%',
+        height: '100%',
+      }}>
+        <FlatList style={styles.productContainer}
+          data={food.slice(2,4)}
+          horizontal={true}
+          renderItem={({item}) =>(
+            <View style={{margin: 5}}>
+              <Product image={item.img} productName={item.name} productPrice={item.price} note={item.note} />
+            </View>
+            
+          )}
+          scrollEnabled={false}
+          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
+        />
+      </View>
     </View>
   )
 }
@@ -110,6 +151,13 @@ const styles = StyleSheet.create({
   },
   scrollView:{
     marginTop: 10,
-    height: 200
+    height: "auto",
+    width: "100%",
+    overflow: "hidden",
+  },
+  productContainer:{
+    width: "100%",
+    height: "auto",
+    overflow: "scroll",
   }
 })
