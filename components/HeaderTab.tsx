@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         display: 'flex',
         flexDirection: "row",
+        flexWrap: "wrap",
         justifyContent: 'space-between',
         alignItems: 'center',
     },
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     subContainerRight:{
         display: 'flex',
         flexDirection: "row",
-        width: 'auto',
+        width: 100,
         height: '100%',
         alignItems: "center",
         justifyContent: "center",
