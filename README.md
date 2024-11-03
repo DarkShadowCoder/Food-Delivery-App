@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=TypeScript&color=3178C6" alt="three.js" />
     <img src="https://img.shields.io/badge/-Android-black?style=for-the-badge&logoColor=white&logo=Android&color=34A853" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/-Hygraph-black?style=for-the-badge&logoColor=white&logo=Hygraph&color=000020" alt="Hygraph" />
-    <img src="https://img.shields.io/badge/-Clerk-blue?style=for-the-badge&logoColor=white&logo=Clerk&color=3178C6" alt="Hygraph" />
+    <img src="https://img.shields.io/badge/-Clerk-blue?style=for-the-badge&logoColor=white&logo=Clerk&color=61DAFB" alt="Hygraph" />
   </div>
 
   <h3 align="center">Day 3 of <b fontweight="bold">30Days-30Apps Challenge</b></h3>
