@@ -9,6 +9,7 @@ import TabNavigation from './Navigation/TabNavigation';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Colors } from '@/constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
+import ProductScreen from './Screens/productScreen/ProductScreen';
 ;
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -45,6 +46,6 @@ export default function RootLayout() {
       </Stack.Navigator>
   )*/
       return (
-        <HomeScreen />
+        <ProductScreen />
       )
 }
