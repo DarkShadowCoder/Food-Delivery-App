@@ -51,10 +51,11 @@ const Product = (props:any) => {
                 <View style={{
                     width:"auto",
                     height:"auto",
-                    padding: 2,
+                    padding: 5,
                     borderRadius: 99,
+                    backgroundColor: Colors.PRIMARY
                 }}>
-                    <Ionicons name="bookmarks-sharp" size={25} color={Colors.WHITE} />
+                    <Ionicons name="bookmarks-sharp" size={18} color={Colors.WHITE} />
                 </View>
             </View>
         </View>
@@ -70,33 +71,38 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         flexWrap: "nowrap",
-        width:"45%",
-        height: 350,
+        width:"48%",
+        minWidth: 180,
+        height: 210,
         gap: 8,
         borderRadius: 20,
         overflow: "hidden",
-        shadowColor: Colors.GRAY,
-        shadowOpacity: 0.4,
-        shadowOffset: {width:10, height:5}
+        shadowColor: Colors.BLACK,
+        shadowRadius: 10,
+        shadowOpacity: 0.6,
+        elevation: 3,
+        shadowOffset: {width:2, height:2},
+        backgroundColor: Colors.WHITE
     },
     image:{
         width:"100%",
-        height: 250,
+        height: 120,
         objectFit: 'fill',
     },
     subContainer:{
         display:'flex',
         flexDirection:'column',
-        gap: 5,
+        gap: 1,
         justifyContent: 'space-between',
         padding: 5,
+        paddingBottom: 10,
         alignItems:"center",
         width: '100%',
-        height: 90
+        height: 65
     },
     title:{
         fontFamily: 'outfit-medium',
-        fontSize: 25,
+        fontSize: 17,
         color:Colors.BLACK
     },
     textContainer:{
