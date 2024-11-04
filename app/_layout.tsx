@@ -11,6 +11,8 @@ import { Colors } from '@/constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
 import ProductScreen from './Screens/productScreen/ProductScreen';
 import HeaderTab from '@/components/HeaderTab';
+import { ApolloProvider } from '@apollo/client';
+import client from '@/hooks/ApolloClientSetup';
 ;
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -47,6 +49,8 @@ export default function RootLayout() {
       </Stack.Navigator>
   )*/
       return (
-        <GetStartedScreen />
+        <ApolloProvider client={client}>
+          <HomeScreen />
+        </ApolloProvider>
       )
 }
