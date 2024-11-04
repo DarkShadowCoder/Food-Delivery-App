@@ -5,8 +5,27 @@ import { Colors } from '@/constants/Colors'
 import { category, food } from '@/data/data'
 import Category from '@/components/Category'
 import Product from '@/components/Product'
+import { useQuery, gql } from '@apollo/client'
+
+
+const get_food = gql`
+    {
+      categories{
+        name
+        image{
+          url
+          fileName
+        }
+      }
+    }
+`
+
 
 const HomeScreen = () => {
+  const {loading, error, data} = useQuery(get_food);
+  if (loading) return <Text>Loading...</Text>;
+  if (error) return <Text>Error :(</Text>;
+    console.log("data",data.categories)
   return (
     <View style={styles.container}>
       <HeaderTab/>
@@ -65,9 +84,9 @@ const HomeScreen = () => {
       }}>Categories</Text>
       <View>
         <FlatList
-        data={category}
+        data={data.categories}
         renderItem={({item}) =>(
-          <Category image={item.img} title={item.title}/>
+          <Category image={require("@/assets/images/burger.webp")} title={item.name}/>
         )}
         style={styles.scrollView}
         horizontal={true}
